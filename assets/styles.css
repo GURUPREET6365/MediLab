@@ -75,43 +75,73 @@ a {
 .brand {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 14px;
   font-weight: 800;
 }
 
 .brand-mark {
   display: grid;
   place-items: center;
-  width: 42px;
-  height: 42px;
+  width: 48px;
+  height: 48px;
   color: #fff;
-  background: var(--teal);
-  border-radius: 8px;
-  font-size: 26px;
-  font-weight: 700;
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.22), rgba(255, 255, 255, 0)),
+    linear-gradient(135deg, var(--teal), var(--green) 55%, var(--blue));
+  border-radius: 12px;
+  font-size: 30px;
+  font-weight: 900;
+  box-shadow: 0 12px 24px rgba(15, 143, 140, 0.24);
 }
 
 .brand-text {
   display: grid;
-  gap: 1px;
-  line-height: 1;
+  gap: 4px;
+  line-height: 0.95;
 }
 
 .brand-name {
-  font-size: 24px;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  font-family: "Trebuchet MS", "Arial Black", Arial, Helvetica, sans-serif;
+  font-size: 29px;
   font-weight: 900;
-  background: linear-gradient(90deg, var(--teal), var(--blue), var(--green), var(--coral));
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
   letter-spacing: 0;
+  text-shadow: 0 8px 18px rgba(18, 54, 74, 0.12);
+}
+
+.brand-medi {
+  color: var(--blue);
+}
+
+.brand-dash {
+  color: var(--teal);
+  margin: 0 5px;
+}
+
+.brand-lab {
+  color: var(--green);
+}
+
+.brand-name::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -5px;
+  height: 4px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--teal), var(--green), var(--coral));
+  opacity: 0.75;
 }
 
 .brand-subtitle {
-  color: var(--muted);
-  font-size: 12px;
-  font-weight: 800;
-  text-transform: lowercase;
+  color: var(--ink);
+  font-size: 12.5px;
+  font-weight: 900;
+  padding-top: 5px;
 }
 
 .nav-links {
@@ -411,6 +441,84 @@ h3 {
   font-weight: 900;
 }
 
+.profile-table .package-count {
+  margin-bottom: 0;
+}
+
+.profile-table-wrap {
+  overflow-x: auto;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 12px 30px rgba(25, 43, 58, 0.06);
+}
+
+.profile-table {
+  width: 100%;
+  min-width: 760px;
+  border-collapse: collapse;
+}
+
+.profile-table th,
+.profile-table td {
+  padding: 22px;
+  text-align: left;
+  vertical-align: top;
+  border-bottom: 1px solid var(--line);
+}
+
+.profile-table th {
+  color: #fff;
+  background: var(--navy);
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.profile-table tr:last-child td {
+  border-bottom: 0;
+}
+
+.profile-name-link,
+.profile-name {
+  color: var(--blue);
+  font-size: 22px;
+  font-weight: 900;
+}
+
+.table-test-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.table-test-list a,
+.table-test-item {
+  display: inline-flex;
+  align-items: center;
+  min-height: 34px;
+  padding: 6px 10px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--soft);
+  color: #334155;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.table-test-list a:hover {
+  color: var(--teal);
+  border-color: rgba(15, 143, 140, 0.45);
+}
+
+.profile-price {
+  font-size: 22px;
+  font-weight: 900;
+  color: var(--coral);
+}
+
 .booking-band {
   background: #fff;
   border-top: 1px solid var(--line);
@@ -490,6 +598,22 @@ h3 {
   font-weight: 900;
 }
 
+.phone-links a {
+  color: var(--amber);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  transition: color 150ms ease;
+}
+
+.phone-links a:hover {
+  color: #fff;
+}
+
+[data-phone] {
+  color: var(--amber);
+}
+
 .contact-list {
   display: grid;
   gap: 12px;
@@ -498,6 +622,17 @@ h3 {
   list-style: none;
   color: rgba(255, 255, 255, 0.9);
   font-weight: 700;
+}
+
+.contact-list a {
+  color: var(--amber);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color 150ms ease;
+}
+
+.contact-list a:hover {
+  color: #fff;
 }
 
 .contact-panel {
@@ -646,22 +781,25 @@ footer {
   }
 
   .brand-mark {
-    width: 38px;
-    height: 38px;
-    font-size: 24px;
+    width: 42px;
+    height: 42px;
+    border-radius: 10px;
+    font-size: 26px;
   }
 
   .brand-name {
-    font-size: 21px;
+    font-size: 24px;
   }
 
   .brand-subtitle {
-    font-size: 11px;
+    font-size: 11.5px;
+    font-weight: 900;
+    color: var(--ink);
   }
 
   .nav-links {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     gap: 10px;
     font-size: 14px;
   }
@@ -738,6 +876,66 @@ footer {
     padding: 24px;
   }
 
+  .profile-table-wrap {
+    overflow: visible;
+    border: 0;
+    background: transparent;
+    box-shadow: none;
+  }
+
+  .profile-table,
+  .profile-table thead,
+  .profile-table tbody,
+  .profile-table tr,
+  .profile-table th,
+  .profile-table td {
+    display: block;
+    width: 100%;
+    min-width: 0;
+  }
+
+  .profile-table thead {
+    display: none;
+  }
+
+  .profile-table tr {
+    margin-bottom: 16px;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 12px 30px rgba(25, 43, 58, 0.06);
+    overflow: hidden;
+  }
+
+  .profile-table td {
+    padding: 18px;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .profile-table td:last-child {
+    border-bottom: 0;
+  }
+
+  .profile-table td::before {
+    content: attr(data-label);
+    display: block;
+    margin-bottom: 8px;
+    color: var(--muted);
+    font-size: 12px;
+    font-weight: 900;
+    text-transform: uppercase;
+  }
+
+  .table-test-list {
+    display: grid;
+    gap: 8px;
+  }
+
+  .table-test-list a,
+  .table-test-list .table-test-item {
+    width: 100%;
+  }
+
   .test-card {
     min-height: 104px;
   }
@@ -775,10 +973,12 @@ footer {
   }
 
   .brand-name {
-    font-size: 19px;
+    font-size: 21px;
   }
 
   .brand-subtitle {
     font-size: 10px;
+    font-weight: 900;
+    color: var(--ink);
   }
 }

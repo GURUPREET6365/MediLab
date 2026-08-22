@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Medi-Lab Diagnostic Centre</title>
   <link rel="stylesheet" href="assets/styles.css">
 </head>
+
 <body>
   <div class="topbar">
     <div class="topbar-inner">
-      <span>Open <span data-hours>Monday to Saturday, 7:00 AM - 8:00 PM</span></span>
-      <a data-phone-link href="tel:+919876543210">Contact: <span data-phone>+91 98765 43210</span></a>
+      <span>Open All Day 8:00 AM - 7:00 PM</span>
+      <span class="phone-links">Contact: <a href="tel:+919891043406">9891043406</a>, <a
+          href="tel:+918860628839">8860628839</a></span>
     </div>
   </div>
-
   <header class="header">
     <nav class="nav" aria-label="Main navigation">
       <a class="brand" href="index.html" aria-label="Medi-Lab home">
@@ -23,12 +25,6 @@
           <span class="brand-subtitle">blood collection centre</span>
         </span>
       </a>
-      <div class="nav-links">
-        <a href="#tests">Tests</a>
-        <a href="#booking">Booking</a>
-        <a href="#contact">Contact</a>
-        <a class="button" data-phone-link href="tel:+919876543210">Call Now</a>
-      </div>
     </nav>
   </header>
 
@@ -38,16 +34,15 @@
         <div class="hero-copy">
           <p class="eyebrow">Trusted diagnostic testing</p>
           <h1>Accurate lab tests with quick, clear reports.</h1>
-          <p>Medi-Lab provides professional pathology services for liver, kidney, blood, and urine tests with easy booking and patient-friendly support.</p>
+          <p>Medi-Lab provides professional pathology services for liver, kidney, blood, and urine tests with easy
+            booking and patient-friendly support. <br>
+          <h3 style="color: var(--blue);">Processing Lab: Accuprobe Diagonositcs</h3>
+          </p>
           <div class="hero-actions">
-            <a class="button" href="#booking">Book a Test</a>
-            <a class="button secondary" href="#tests">View Test Options</a>
+            <a class="button" data-phone-link href="tel:+918860628839">Call Now</a>
+            <a class="button secondary" href="#tests">View Test Profile</a>
           </div>
           <div class="hero-stats" aria-label="Lab highlights">
-            <div class="stat">
-              <strong>4</strong>
-              <span>Core test categories</span>
-            </div>
             <div class="stat">
               <strong>Same Day</strong>
               <span>Report support</span>
@@ -64,10 +59,140 @@
     <section id="tests">
       <div class="section-inner">
         <div class="section-heading">
-          <h2>Popular Test Options</h2>
-          <p>Select a test category to view available tests and booking contact information.</p>
+          <h2>Complete Body Profile</h2>
+          <p>View the complete list of tests included in each health profile, along with pricing details.</p>
         </div>
-        <div class="test-grid" data-tests-grid></div>
+        <div class="profile-table-wrap">
+          <table class="profile-table" data-profile-table>
+            <thead>
+              <tr>
+                <th>Test Name</th>
+                <th>How Many Tests</th>
+                <th>Tests Included</th>
+                <th>Price</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td data-label="Test Name"><span class="profile-name">A-1.1+</span></td>
+                <td data-label="How Many Tests"><span class="package-count">67 Tests</span></td>
+                <td data-label="Tests Included">
+                  <ul class="table-test-list">
+                    <li><span class="table-test-item">BSF (Blood Sugar Fasting)</span></li>
+                    <li><span class="table-test-item">CBC (Complete Blood Count)</span></li>
+                    <li><span class="table-test-item">ESR (Erythrocyte Sedimentation Rate)</span></li>
+                    <li><span class="table-test-item">Liver Function</span></li>
+                    <li><span class="table-test-item">Kidney Function</span></li>
+                    <li><span class="table-test-item">Lipid Profile</span></li>
+                    <li><span class="table-test-item">Thyroid Profile</span></li>
+                  </ul>
+                </td>
+                <td data-label="Price"><span class="profile-price">₹1,000</span></td>
+              </tr>
+              <tr>
+                <td data-label="Test Name"><span class="profile-name">P-170</span></td>
+                <td data-label="How Many Tests"><span class="package-count">89 Tests</span></td>
+                <td data-label="Tests Included">
+                  <ul class="table-test-list">
+                    <li><span class="table-test-item">BSF (Blood Sugar Fasting)</span></li>
+                    <li><span class="table-test-item">HBA1C</span></li>
+                    <li><span class="table-test-item">CBC (Complete Blood Count)</span></li>
+                    <li><span class="table-test-item">ESR (Erythrocyte Sedimentation Rate)</span></li>
+                    <li><span class="table-test-item">Liver Function</span></li>
+                    <li><span class="table-test-item">Kidney Function</span></li>
+                    <li><span class="table-test-item">Lipid Profile</span></li>
+                    <li><span class="table-test-item">Thyroid Profile</span></li>
+                    <li><span class="table-test-item">Iron</span></li>
+                    <li><span class="table-test-item">Urine RE/ME (Routine Examination/Microscopic Examination)</span>
+                    </li>
+                  </ul>
+                </td>
+                <td data-label="Price"><span class="profile-price">₹1,200</span></td>
+              </tr>
+              <tr>
+                <td data-label="Test Name"><span class="profile-name">NIROG-2</span></td>
+                <td data-label="How Many Tests"><span class="package-count">92 Tests</span></td>
+                <td data-label="Tests Included">
+                  <ul class="table-test-list">
+                    <li><span class="table-test-item">BSF (Blood Sugar Fasting)</span></li>
+                    <li><span class="table-test-item">HBA1C</span></li>
+                    <li><span class="table-test-item">CBC (Complete Blood Count)</span></li>
+                    <li><span class="table-test-item">ESR (Erythrocyte Sedimentation Rate)</span></li>
+                    <li><span class="table-test-item">Liver Function</span></li>
+                    <li><span class="table-test-item">Kidney Function</span></li>
+                    <li><span class="table-test-item">Lipid/Cholesterol Profile</span></li>
+                    <li><span class="table-test-item">Thyroid Profile</span></li>
+                    <li><span class="table-test-item">Iron Profile</span></li>
+                    <li><span class="table-test-item">Vitamin B12</span></li>
+                    <li><span class="table-test-item">Vitamin D</span></li>
+                    <li><span class="table-test-item">Urine Routine Examination</span></li>
+                  </ul>
+                </td>
+                <td data-label="Price"><span class="profile-price">₹1,500</span></td>
+              </tr>
+              <tr>
+                <td data-label="Test Name"><span class="profile-name">P-451</span></td>
+                <td data-label="How Many Tests"><span class="package-count">95 Tests</span></td>
+                <td data-label="Tests Included">
+                  <ul class="table-test-list">
+                    <li><span class="table-test-item">BSF (Blood Sugar Fasting)</span></li>
+                    <li><span class="table-test-item">HBA1C</span></li>
+                    <li><span class="table-test-item">CBC (Complete Blood Count)</span></li>
+                    <li><span class="table-test-item">ESR (Erythrocyte Sedimentation Rate)</span></li>
+                    <li><span class="table-test-item">Liver Function</span></li>
+                    <li><span class="table-test-item">Kidney Function</span></li>
+                    <li><span class="table-test-item">Lipid/Cholesterol Profile</span></li>
+                    <li><span class="table-test-item">Thyroid Profile</span></li>
+                    <li><span class="table-test-item">Iron Profile</span></li>
+                    <li><span class="table-test-item">Vitamin B12</span></li>
+                    <li><span class="table-test-item">Vitamin D</span></li>
+                    <li><span class="table-test-item">Urine Routine Examination</span></li>
+                    <li><span class="table-test-item">CRP-QUANTITATIVE</span></li>
+                    <li><span class="table-test-item">RA-QUANTITATIVE</span></li>
+                    <li><span class="table-test-item">URINE: MICROALBUMIN</span></li>
+                    <li><span class="table-test-item">URINE ALBUMIN/CREATININE RATIO</span></li>
+                  </ul>
+                </td>
+                <td data-label="Price"><span class="profile-price">₹2,200</span></td>
+              </tr>
+              <tr>
+                <td data-label="Test Name"><span class="profile-name">PCOD - GOLD</span></td>
+                <td data-label="How Many Tests"><span class="package-count">7 Tests</span></td>
+                <td data-label="Tests Included">
+                  <ul class="table-test-list">
+                    <li><span class="table-test-item">Dehydroepiandrosterone Sulphate (DHEAS)</span></li>
+                    <li><span class="table-test-item">Anti Mullarian Hormone (AMH)</span></li>
+                    <li><span class="table-test-item">Follicle Stimulating Hormone (FSH)</span></li>
+                    <li><span class="table-test-item">Luteinizing Hormone (LH)</span></li>
+                    <li><span class="table-test-item">Testosterone - total</span></li>
+                    <li><span class="table-test-item">S.Insuling - Fasting</span></li>
+                    <li><span class="table-test-item">Prolactin (PRL)</span></li>
+                  </ul>
+                </td>
+                <td data-label="Price"><span class="profile-price">₹3,500</span></td>
+              </tr>
+              <tr>
+                <td data-label="Test Name"><span class="profile-name">PCOD - PLATINUM</span></td>
+                <td data-label="How Many Tests"><span class="package-count">10 Tests</span></td>
+                <td data-label="Tests Included">
+                  <ul class="table-test-list">
+                    <li><span class="table-test-item">Dehydroepiandrosterone Sulphate (DHEAS)</span></li>
+                    <li><span class="table-test-item">Anti Mullarian Hormone (AMH)</span></li>
+                    <li><span class="table-test-item">Follicle Stimulating Hormone (FSH)</span></li>
+                    <li><span class="table-test-item">Luteinizing Hormone (LH)</span></li>
+                    <li><span class="table-test-item">Testosterone - total</span></li>
+                    <li><span class="table-test-item">S.Insuling - Fasting</span></li>
+                    <li><span class="table-test-item">Prolactin (PRL)</span></li>
+                    <li><span class="table-test-item">Estradiol (E2)</span></li>
+                    <li><span class="table-test-item">Progesterone</span></li>
+                    <li><span class="table-test-item">TSH</span></li>
+                  </ul>
+                </td>
+                <td data-label="Price"><span class="profile-price">₹4,000</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
     </section>
 
@@ -75,7 +200,8 @@
       <div class="section-inner booking-layout">
         <div class="booking">
           <h2>Booking Information</h2>
-          <p>Book your lab test by calling the centre, sharing the test name, and confirming your preferred visit time or home sample pickup availability.</p>
+          <p>Book your lab test by calling the centre, sharing the test name, and confirming your preferred home sample
+            collection time.</p>
           <div class="steps">
             <div class="step">
               <span class="step-number">1</span>
@@ -87,15 +213,15 @@
             <div class="step">
               <span class="step-number">2</span>
               <div>
-                <strong>Confirm sample collection</strong>
-                <span>Visit the lab or ask about home sample pickup for your location.</span>
+                <strong>Confirm home collection</strong>
+                <span>Share your address and preferred time for sample pickup.</span>
               </div>
             </div>
             <div class="step">
               <span class="step-number">3</span>
               <div>
                 <strong>Receive your report</strong>
-                <span>Collect reports from the lab or request digital delivery after verification.</span>
+                <span>Receive your verified report digitally after processing.</span>
               </div>
             </div>
           </div>
@@ -103,12 +229,18 @@
 
         <aside class="contact-card" id="contact">
           <h2>Contact & Appointments</h2>
-          <p>For test details, fasting instructions, report timing, and home collection booking, call the number below.</p>
-          <a class="phone" data-phone data-phone-link href="tel:+919876543210">+91 98765 43210</a>
+          <p>For test details, fasting instructions, report timing, and home collection booking, call the number below.
+          </p>
+          <div class="phone phone-links"><a href="tel:+919891043406">9891043406</a>, <a
+              href="tel:+918860628839">8860628839</a></div>
           <p>Booking desk available during lab hours.</p>
           <ul class="contact-list">
-            <li>Address: <span data-address>Medi-Lab Diagnostic Centre, Main Road, Your City</span></li>
-            <li>Email: <a data-email-link href="mailto:care@medilab.example"><span data-email>care@medilab.example</span></a></li>
+            <li>Address: <span data-address>Shop No - 3, DDA Market Pocket - C, Mayur Vihar Phase - II, Delhi -
+                91</span></li>
+            <li>Visit Us: <a href="https://maps.app.goo.gl/Qz8t99A7CX7D4iwv5" target="_blank"
+                rel="noopener noreferrer">View on Google Maps</a></li>
+            <li>Email: <a data-email-link href="mailto:dineshkumarmedilab@gmail.com"><span
+                  data-email>dineshkumarmedilab@gmail.com</span></a></li>
             <li><span data-pickup>Home sample pickup available on request</span></li>
           </ul>
         </aside>
@@ -119,7 +251,8 @@
       <div class="section-inner">
         <div class="section-heading">
           <h2>Professional Care, Simple Process</h2>
-          <p>From sample collection to final reporting, Medi-Lab focuses on accuracy, hygiene, and a calm patient experience.</p>
+          <p>From sample collection to final reporting, Medi-Lab focuses on accuracy, hygiene, and a calm patient
+            experience.</p>
         </div>
         <div class="why-grid">
           <div class="why-item">
@@ -128,11 +261,12 @@
           </div>
           <div class="why-item">
             <h3>Clear Guidance</h3>
-            <p>Preparation instructions are shared at booking so patients know when fasting or special collection is needed.</p>
+            <p>Preparation instructions are shared at booking so patients know when fasting or special collection is
+              needed.</p>
           </div>
           <div class="why-item">
             <h3>Easy Access</h3>
-            <p>Phone booking, lab visits, and home sample pickup requests make the process straightforward.</p>
+            <p>Phone booking and home sample pickup make the process straightforward.</p>
           </div>
         </div>
       </div>
@@ -142,10 +276,11 @@
   <footer>
     <div class="footer-inner">
       <span data-site-name>Medi-Lab Diagnostic Centre</span>
-      <span>Call <span data-phone>+91 98765 43210</span> to book liver, kidney, blood, and urine tests.</span>
+      <span>Call <span data-phone>9891043406, 8860628839</span> to book liver, kidney, blood, and urine tests.</span>
     </div>
   </footer>
 
   <script src="assets/site.js"></script>
 </body>
+
 </html>
