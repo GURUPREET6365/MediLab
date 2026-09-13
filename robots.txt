@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://medilab.medilab-com.workers.dev/sitemap.xml
